@@ -8,7 +8,6 @@
 
 <title>Roblox-RP</title>
 
-
 <style>
 
 *{
@@ -28,21 +27,18 @@ color:white;
 
 
 
-/* ØVERSTE FORSIDE */
+/* FORSIDE */
 
 header{
 
 height:100vh;
 
 background:
-
 linear-gradient(
 rgba(0,0,0,0.55),
 rgba(0,0,0,0.85)
 ),
-
 url("https://images.unsplash.com/photo-1480714378408-67cf0d13bc1b")
-
 center/cover;
 
 
@@ -54,34 +50,11 @@ text-align:center;
 }
 
 
-
 .hero{
 
 max-width:1200px;
-animation:show 2s;
 
 }
-
-
-
-@keyframes show{
-
-from{
-
-opacity:0;
-transform:translateY(50px);
-
-}
-
-to{
-
-opacity:1;
-transform:translateY(0);
-
-}
-
-}
-
 
 
 .emergency{
@@ -98,17 +71,15 @@ text-shadow:
 }
 
 
-
 @keyframes blink{
 
 50%{
 
-opacity:0.3;
+opacity:0.4;
 
 }
 
 }
-
 
 
 
@@ -122,14 +93,11 @@ letter-spacing:5px;
 
 text-shadow:
 
-0 0 15px #38bdf8,
-0 0 40px blue;
-
+0 0 20px blue;
 
 animation:title 3s infinite alternate;
 
 }
-
 
 
 @keyframes title{
@@ -150,16 +118,13 @@ transform:scale(1.08);
 
 
 
-
 .hero h2{
-
-font-size:35px;
 
 color:#ef4444;
 
+font-size:35px;
+
 }
-
-
 
 
 .hero p{
@@ -173,7 +138,7 @@ line-height:1.7;
 
 
 
-/* ROLLE BOKSE */
+/* KUN FORSIDE ROLLE BOKSE */
 
 .action-box{
 
@@ -181,7 +146,7 @@ display:flex;
 
 justify-content:center;
 
-gap:18px;
+gap:15px;
 
 flex-wrap:wrap;
 
@@ -210,10 +175,9 @@ transition:0.3s;
 }
 
 
-
 .role-card:hover{
 
-transform:translateY(-15px) scale(1.05);
+transform:translateY(-12px) scale(1.05);
 
 background:#1e3a8a;
 
@@ -233,10 +197,7 @@ font-size:45px;
 
 color:#38bdf8;
 
-font-size:22px;
-
 }
-
 
 
 
@@ -261,8 +222,6 @@ margin:15px;
 
 font-weight:bold;
 
-transition:0.3s;
-
 }
 
 
@@ -270,8 +229,6 @@ transition:0.3s;
 .button:hover{
 
 background:#dc2626;
-
-transform:scale(1.1);
 
 }
 
@@ -292,8 +249,6 @@ position:sticky;
 
 top:0;
 
-z-index:10;
-
 }
 
 
@@ -311,17 +266,16 @@ font-weight:bold;
 }
 
 
-
 nav a:hover{
 
 color:#38bdf8;
 
 }
 
-<style>
 
 
-/* SEKTIONER */
+
+/* NORMALE BOKSE */
 
 section{
 
@@ -335,102 +289,22 @@ padding:30px;
 
 
 
-
 .card{
 
 padding:35px;
 
 margin:35px 0;
 
-border-radius:25px;
+border-radius:15px;
 
-background-size:cover;
+background:#111827;
 
-background-position:center;
-
-position:relative;
-
-overflow:hidden;
-
-box-shadow:0 0 30px black;
+box-shadow:0 0 15px black;
 
 border:1px solid #334155;
 
 }
 
-
-
-
-.card::before{
-
-content:"";
-
-position:absolute;
-
-inset:0;
-
-background:rgba(0,0,0,0.65);
-
-}
-
-
-
-.card *{
-
-position:relative;
-
-z-index:1;
-
-}
-
-
-
-
-#home{
-
-background-image:url("https://images.unsplash.com/photo-1477959858617-67f85cf4f1df");
-
-}
-
-
-
-#rules{
-
-background-image:url("https://images.unsplash.com/photo-1453873531674-2151bcd01707");
-
-}
-
-
-
-#staff{
-
-background-image:url("https://images.unsplash.com/photo-1521737711867-e3b97375f902");
-
-}
-
-
-
-#gang{
-
-background-image:url("https://images.unsplash.com/photo-1519085360753-af0119f7cbe7");
-
-}
-
-
-
-#news{
-
-background-image:url("https://images.unsplash.com/photo-1504711434969-e33886168f5c");
-
-}
-
-
-
-#contact{
-
-background-image:url("https://images.unsplash.com/photo-1516321318423-f06f85e504b3");
-
-}
 
 
 
@@ -440,18 +314,12 @@ color:#38bdf8;
 
 }
 
-
-
 </style>
-
 
 </head>
 
 
 <body>
-
-
-
 
 
 <header>
@@ -466,11 +334,13 @@ color:#38bdf8;
 </div>
 
 
+
 <h1>
 
 Roblox-RP
 
 </h1>
+
 
 
 <h2>
@@ -484,6 +354,7 @@ Emergency Roleplay Community
 </h2>
 
 
+
 <p>
 
 Velkommen til Roblox-RP
@@ -494,11 +365,11 @@ Velkommen til Roblox-RP
 
 <br><br>
 
-En realistisk RP verden fyldt med action, teamwork og spændende historier.
+En realistisk RP-server med action, teamwork og spændende historier.
 
 <br>
 
-(A realistic RP world full of action, teamwork and exciting stories.)
+(A realistic RP server with action, teamwork and exciting stories.)
 
 </p>
 
@@ -533,7 +404,6 @@ En realistisk RP verden fyldt med action, teamwork og spændende historier.
 
 
 
-
 <div class="role-card">
 
 <div class="icon">🚑</div>
@@ -543,7 +413,6 @@ En realistisk RP verden fyldt med action, teamwork og spændende historier.
 <p>Paramedic</p>
 
 </div>
-
 
 
 
@@ -559,7 +428,6 @@ En realistisk RP verden fyldt med action, teamwork og spændende historier.
 
 
 
-
 <div class="role-card">
 
 <div class="icon">🚛</div>
@@ -569,7 +437,6 @@ En realistisk RP verden fyldt med action, teamwork og spændende historier.
 <p>Truck Driver</p>
 
 </div>
-
 
 
 
@@ -585,7 +452,6 @@ En realistisk RP verden fyldt med action, teamwork og spændende historier.
 
 
 
-
 <div class="role-card">
 
 <div class="icon">🔧</div>
@@ -597,10 +463,7 @@ En realistisk RP verden fyldt med action, teamwork og spændende historier.
 </div>
 
 
-
 </div>
-
-
 
 
 
@@ -615,7 +478,6 @@ En realistisk RP verden fyldt med action, teamwork og spændende historier.
 </a>
 
 
-
 <a class="button" href="#contact">
 
 💬 Discord
@@ -627,8 +489,6 @@ En realistisk RP verden fyldt med action, teamwork og spændende historier.
 </div>
 
 </header>
-
-
 
 
 
@@ -660,10 +520,7 @@ En realistisk RP verden fyldt med action, teamwork og spændende historier.
 
 
 
-
-
 <div class="card" id="home">
-
 
 <h2>
 
@@ -676,13 +533,13 @@ Forside (Home)
 
 Velkommen til Roblox-RP.
 
-Her kan du skabe din egen historie og blive en del af vores community.
+Her kan du skabe din egen historie og spille realistisk roleplay sammen med andre.
 
 <br><br>
 
 Welcome to Roblox-RP.
 
-Create your own story and become part of our community.
+Create your own story and play realistic roleplay with others.
 
 </p>
 
@@ -764,7 +621,6 @@ Andx100
 
 
 
-
 <h3>🔨 Moderator</h3>
 
 <p>
@@ -774,9 +630,7 @@ Andx100
 </p>
 
 
-
 </div>
-
 
 
 
@@ -800,13 +654,14 @@ Bliv ejer af en bande
 
 <p>
 
-Vil du skabe din egen bande?
+Vil du lede din egen bande?
 
 <br>
 
-Do you want to create your own gang?
+Do you want to lead your own gang?
 
 </p>
+
 
 
 <ul>
@@ -815,7 +670,7 @@ Do you want to create your own gang?
 
 <li>Følg reglerne (Follow the rules)</li>
 
-<li>Lav en historie (Create a story)</li>
+<li>Lav en god historie (Create a good story)</li>
 
 <li>Hav seriøse medlemmer (Have serious members)</li>
 
@@ -823,7 +678,6 @@ Do you want to create your own gang?
 
 
 </div>
-
 
 
 
@@ -841,6 +695,7 @@ Nyheder (News)
 </h2>
 
 
+
 <h3>
 
 🏁 Ny racer bane ved containerskibene
@@ -854,13 +709,14 @@ Nyheder (News)
 
 <p>
 
-En ny racer bane er lavet ved containerskibene.
+En ny racer bane er blevet lavet ved containerskibene.
 
 <br>
 
 A new race track has been created by the container ships.
 
 </p>
+
 
 
 
@@ -890,7 +746,6 @@ Krimihuset har fået et P-hus.
 The Crime House has received a parking garage.
 
 </p>
-
 
 
 </div>
@@ -932,6 +787,7 @@ Contact staff if you have questions.
 </p>
 
 
+
 <a class="button">
 
 Join Discord
@@ -943,7 +799,9 @@ Join Discord
 
 
 
+
 </section>
+
 
 
 
@@ -962,6 +820,7 @@ Emergency Roleplay Community
 
 
 
+
 </body>
 
-</html>
+</html>  
