@@ -1,29 +1,479 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Roblox-RP</title>
+
+
+<style>
+
+*{
+box-sizing:border-box;
+scroll-behavior:smooth;
+}
+
+
+body{
+
+margin:0;
+font-family:Arial, sans-serif;
+background:#050b18;
+color:white;
+
+}
+
+
+
+/* TOP FORSIDE */
+
+header{
+
+height:100vh;
+
+background:
+
+linear-gradient(
+rgba(0,0,0,0.55),
+rgba(0,0,0,0.85)
+),
+
+url("https://images.unsplash.com/photo-1480714378408-67cf0d13bc1b")
+
+center/cover;
+
+
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+
+}
+
+
+
+.hero{
+
+max-width:1100px;
+animation:show 2s;
+
+}
+
+
+
+@keyframes show{
+
+from{
+
+opacity:0;
+transform:translateY(50px);
+
+}
+
+to{
+
+opacity:1;
+transform:translateY(0);
+
+}
+
+}
+
+
+
+
+.emergency{
+
+font-size:70px;
+
+animation:blink 1s infinite;
+
+text-shadow:
+
+0 0 20px red,
+0 0 40px blue;
+
+}
+
+
+
+@keyframes blink{
+
+50%{
+
+opacity:0.3;
+
+}
+
+}
+
+
+
+
+.hero h1{
+
+font-size:100px;
+
+color:#38bdf8;
+
+letter-spacing:5px;
+
+text-shadow:
+
+0 0 15px #38bdf8,
+0 0 40px blue;
+
+animation:title 3s infinite alternate;
+
+}
+
+
+
+@keyframes title{
+
+from{
+
+transform:scale(1);
+
+}
+
+to{
+
+transform:scale(1.08);
+
+}
+
+}
+
+
+
+
+.hero h2{
+
+font-size:35px;
+
+color:#ef4444;
+
+}
+
+
+
+
+.hero p{
+
+font-size:22px;
+
+line-height:1.7;
+
+}
+
+
+
+
+/* ROLLE BOKSE */
+
+
+.action-box{
+
+display:flex;
+
+justify-content:center;
+
+gap:15px;
+
+flex-wrap:wrap;
+
+margin-top:25px;
+
+}
+
+
+
+
+.action-box div{
+
+background:rgba(0,0,0,0.75);
+
+padding:15px;
+
+width:170px;
+
+border-radius:20px;
+
+border:1px solid #38bdf8;
+
+box-shadow:0 0 20px black;
+
+transition:0.3s;
+
+}
+
+
+
+.action-box div:hover{
+
+transform:translateY(-10px);
+
+background:#1e3a8a;
+
+}
+
+
+
+.action-box h3{
+
+color:#38bdf8;
+
+}
+
+
+
+
+/* KNAPPER */
+
+
+.button{
+
+background:#2563eb;
+
+color:white;
+
+padding:15px 30px;
+
+border-radius:12px;
+
+text-decoration:none;
+
+display:inline-block;
+
+margin:15px;
+
+font-weight:bold;
+
+transition:0.3s;
+
+}
+
+
+
+.button:hover{
+
+background:#dc2626;
+
+transform:scale(1.1);
+
+}
+
+
+
+
+/* MENU */
+
+
+nav{
+
+background:#020617;
+
+padding:15px;
+
+text-align:center;
+
+position:sticky;
+
+top:0;
+
+z-index:10;
+
+}
+
+
+
+nav a{
+
+color:white;
+
+margin:10px;
+
+text-decoration:none;
+
+font-weight:bold;
+
+}
+
+
+
+nav a:hover{
+
+color:#38bdf8;
+
+}
+
+
+
+
+/* BOKSE */
+
+
+section{
+
+max-width:1100px;
+
+margin:auto;
+
+padding:30px;
+
+}
+
+
+
+
+.card{
+
+padding:35px;
+
+margin:35px 0;
+
+border-radius:25px;
+
+background-size:cover;
+
+background-position:center;
+
+position:relative;
+
+overflow:hidden;
+
+box-shadow:0 0 30px black;
+
+border:1px solid #334155;
+
+}
+
+
+
+.card::before{
+
+content:"";
+
+position:absolute;
+
+inset:0;
+
+background:rgba(0,0,0,0.65);
+
+}
+
+
+
+.card *{
+
+position:relative;
+
+z-index:1;
+
+}
+
+
+
+
+h2{
+
+color:#38bdf8;
+
+}
+
+
+
+/* BAGGRUNDE */
+
+
+#home{
+
+background-image:url("https://images.unsplash.com/photo-1477959858617-67f85cf4f1df");
+
+}
+
+
+#rules{
+
+background-image:url("https://images.unsplash.com/photo-1453873531674-2151bcd01707");
+
+}
+
+
+#staff{
+
+background-image:url("https://images.unsplash.com/photo-1521737711867-e3b97375f902");
+
+}
+
+
+#gang{
+
+background-image:url("https://images.unsplash.com/photo-1519085360753-af0119f7cbe7");
+
+}
+
+
+#news{
+
+background-image:url("https://images.unsplash.com/photo-1504711434969-e33886168f5c");
+
+}
+
+
+#contact{
+
+background-image:url("https://images.unsplash.com/photo-1516321318423-f06f85e504b3");
+
+}
+
+
+</style>
+
+</head>
+
+
+<body>
+
+
+
 <header>
 
 <div class="hero">
 
 
 <div class="emergency">
+
 🚨 🔴 🔵 🚓 🚒 🚑 🔵 🔴 🚨
+
 </div>
 
 
 <h1>
+
 Roblox-RP
+
 </h1>
 
 
 <h2>
-Emergency Roleplay Community
-<br>
-(Emergency Roleplay Fællesskab)
-</h2>
 
+Emergency Roleplay Community
+
+<br>
+
+(Emergency Roleplay Fællesskab)
+
+</h2>
 
 
 <p>
 
-🌆 Velkommen til Roblox-RP
+Velkommen til Roblox-RP
 
 <br>
 
@@ -31,51 +481,41 @@ Emergency Roleplay Community
 
 <br><br>
 
-
-En realistisk roleplay verden fyldt med action, teamwork og spændende historier.
+En realistisk roleplay verden med action, teamwork og spændende historier.
 
 <br>
 
-(A realistic roleplay world full of action, teamwork and exciting stories.)
+(A realistic roleplay world with action, teamwork and exciting stories.)
 
 <br><br>
 
-
-🚓 Bliv en del af politiet
-
-<br>
-
-(Become part of the police)
-
-<br><br>
-
-
-🚒 Hjælp byen som brandmand
+🚓 Politi (Police)
 
 <br>
 
-(Help the city as a firefighter)
-
-<br><br>
-
-
-🚑 Red borgere som ambulancepersonale
+🚒 Brandvæsen (Fire Department)
 
 <br>
 
-(Save citizens as a paramedic)
-
-<br><br>
-
-
-🕵️ Lav din egen kriminelle historie
+🚑 Ambulance (Paramedic)
 
 <br>
 
-(Create your own criminal story)
+🕵️ Kriminel (Criminal)
+
+<br>
+
+🚛 Lastbil (Truck Driver)
+
+<br>
+
+🚌 Bus (Bus Driver)
+
+<br>
+
+🔧 Autohjælp (Roadside Assistance)
 
 </p>
-
 
 
 
@@ -83,64 +523,30 @@ En realistisk roleplay verden fyldt med action, teamwork og spændende historier
 
 
 <div>
-
-<h3>
-🚓 Politi
-</h3>
-
-<p>
-Police
-</p>
-
+<h3>🚓 Politi</h3>
+<p>Police</p>
 </div>
-
 
 
 <div>
-
-<h3>
-🚒 Brandvæsen
-</h3>
-
-<p>
-Fire Department
-</p>
-
+<h3>🚒 Brandvæsen</h3>
+<p>Fire Department</p>
 </div>
-
 
 
 <div>
-
-<h3>
-🚑 Ambulance
-</h3>
-
-<p>
-Paramedic
-</p>
-
+<h3>🚑 Ambulance</h3>
+<p>Paramedic</p>
 </div>
-
 
 
 <div>
-
-<h3>
-🕵️ Kriminel
-</h3>
-
-<p>
-Criminal
-</p>
-
+<h3>🕵️ Kriminel</h3>
+<p>Criminal</p>
 </div>
 
 
-
 </div>
-
-
 
 
 
@@ -155,7 +561,6 @@ Criminal
 </a>
 
 
-
 <a class="button" href="#contact">
 
 💬 Discord
@@ -167,253 +572,363 @@ Criminal
 </div>
 
 </header>
-/* NY FED FORSIDE EFFEKT */
 
 
-header{
 
-height:100vh;
 
-background:
 
-linear-gradient(
-rgba(0,0,0,0.45),
-rgba(0,0,0,0.85)
-),
+<nav>
 
-url("https://images.unsplash.com/photo-1480714378408-67cf0d13bc1b")
+<a href="#home">Forside (Home)</a>
 
-center/cover;
+<a href="#rules">Regler (Rules)</a>
 
+<a href="#staff">Staff Team</a>
 
-display:flex;
+<a href="#gang">Bande (Gang)</a>
 
-justify-content:center;
+<a href="#news">Nyheder (News)</a>
 
-align-items:center;
+<a href="#contact">Kontakt (Contact)</a>
 
-text-align:center;
+</nav>
 
-overflow:hidden;
 
-}
 
 
 
 
-.hero{
 
-max-width:1100px;
+<section>
 
-animation:fadein 2s;
 
-}
 
+<div class="card" id="home">
 
 
-@keyframes fadein{
+<h2>
 
-from{
+Forside (Home)
 
-opacity:0;
+</h2>
 
-transform:translateY(60px);
 
-}
+<p>
 
+Velkommen til Roblox-RP.
 
-to{
+Her kan du skabe din egen historie og være en del af et stort roleplay fællesskab.
 
-opacity:1;
+<br><br>
 
-transform:translateY(0);
+Welcome to Roblox-RP.
 
-}
+Create your own story and become part of a great roleplay community.
 
-}
+</p>
 
 
+</div>
 
 
 
-.emergency{
 
-font-size:80px;
 
-animation:lights 1s infinite;
 
-text-shadow:
 
-0 0 20px red,
 
-0 0 40px blue;
+<div class="card" id="rules">
 
-}
 
+<h2>
 
+Regler (Rules)
 
+</h2>
 
 
-@keyframes lights{
+<ul>
 
+<li>Respekter alle spillere (Respect all players)</li>
 
-0%{
+<li>Ingen RDM (No random deathmatch)</li>
 
-filter:drop-shadow(0 0 15px red);
+<li>Ingen trolling (No trolling)</li>
 
-}
+<li>Ingen exploits (No exploits)</li>
 
+<li>Følg staff (Follow staff)</li>
 
-50%{
+<li>Hold realistisk RP (Keep realistic RP)</li>
 
-filter:drop-shadow(0 0 35px blue);
+</ul>
 
-}
 
+</div>
 
-100%{
 
-filter:drop-shadow(0 0 15px red);
 
-}
 
 
-}
 
 
 
+<div class="card" id="staff">
 
 
+<h2>
 
-.hero h1{
+Staff Team
 
+</h2>
 
-font-size:100px;
 
+<div class="action-box">
 
-color:#38bdf8;
 
+<div>
 
-letter-spacing:5px;
+<h3>👑 Owner</h3>
 
+<p>
 
-animation:titlemove 3s infinite alternate;
+Millx100
 
+</p>
 
-text-shadow:
+</div>
 
-0 0 15px #38bdf8,
 
-0 0 40px blue;
 
+<div>
 
-}
+<h3>🛡️ Admin</h3>
 
+<p>
 
+Millx100
 
+<br>
 
+Andx100
 
-@keyframes titlemove{
+</p>
 
+</div>
 
-from{
 
-transform:scale(1);
 
-}
 
+<div>
 
-to{
+<h3>🔨 Moderator</h3>
 
-transform:scale(1.08);
+<p>
 
-}
+Andx100
 
+</p>
 
-}
+</div>
 
 
+</div>
 
 
+</div>
 
-.hero h2{
 
 
-font-size:38px;
 
-color:#ef4444;
 
-text-shadow:
 
-0 0 15px red;
 
 
-}
+<div class="card" id="gang">
 
 
+<h2>
 
+Bliv ejer af en bande
 
+<br>
 
-.hero p{
+(Become a gang owner)
 
+</h2>
 
-font-size:22px;
 
-line-height:1.7;
+<p>
 
-}
+Vil du starte din egen bande?
 
+<br>
 
+Do you want to create your own gang?
 
+</p>
 
-.action-box div{
 
 
-transition:0.3s;
+<ul>
 
-}
+<li>Vær aktiv (Be active)</li>
 
+<li>Følg reglerne (Follow the rules)</li>
 
+<li>Lav en god historie (Create a good story)</li>
 
-.action-box div:hover{
+<li>Hav seriøse medlemmer (Have serious members)</li>
 
+</ul>
 
-transform:translateY(-15px) scale(1.05);
 
+</div>
 
-background:rgba(37,99,235,0.8);
 
 
-}
 
 
 
 
 
-.button{
+<div class="card" id="news">
 
 
-transition:0.3s;
+<h2>
 
-box-shadow:
+Nyheder (News)
 
-0 0 15px #2563eb;
+</h2>
 
 
-}
 
+<h3>
 
+🏁 Ny racer bane ved containerskibene
 
+<br>
 
-.button:hover{
+(New race track by the container ships)
 
+</h3>
 
-transform:scale(1.1);
 
+<p>
 
-box-shadow:
+En ny racer bane ved containerskibene er klar.
 
-0 0 30px red;
+<br>
 
+A new race track by the container ships is ready.
 
-}
+</p>
+
+
+
+<hr>
+
+
+
+<h3>
+
+🕵️ Krimihuset
+
+<br>
+
+(Crime House)
+
+</h3>
+
+
+
+<p>
+
+Krimihuset har fået et P-hus.
+
+<br>
+
+The Crime House has received a parking garage.
+
+</p>
+
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="card" id="contact">
+
+
+<h2>
+
+Kontakt (Contact)
+
+</h2>
+
+
+
+<p>
+
+Discord:
+
+<br>
+
+DIT DISCORD LINK HER
+
+
+<br><br>
+
+
+Kontakt staff hvis du har spørgsmål.
+
+<br>
+
+Contact staff if you have questions.
+
+</p>
+
+
+
+<a class="button">
+
+Join Discord
+
+</a>
+
+
+
+</div>
+
+
+
+</section>
+
+
+
+
+
+
+<footer style="background:#020617;text-align:center;padding:20px;">
+
+Roblox-RP © 2026
+
+<br>
+
+Emergency Roleplay Community
+
+</footer>
+
+
+
+
+
+</body>
+
+</html>
