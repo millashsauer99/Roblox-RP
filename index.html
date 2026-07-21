@@ -23,14 +23,17 @@ color:white;
 }
 
 
-/* FORSIDE */
+/* FORSIDE BAGGRUND */
 
 header{
 
 height:100vh;
 
 background:
-linear-gradient(rgba(0,0,0,.65),rgba(0,0,0,.85)),
+linear-gradient(
+rgba(0,0,0,0.65),
+rgba(0,0,0,0.85)
+),
 url("https://images.unsplash.com/photo-1449824913935-59a10b8d2000")
 center/cover;
 
@@ -54,6 +57,7 @@ text-shadow:0 0 25px blue;
 .hero h2{
 
 color:#ef4444;
+font-size:35px;
 
 }
 
@@ -76,12 +80,14 @@ animation:blink 1s infinite;
 @keyframes blink{
 
 50%{
-opacity:.3;
+opacity:0.3;
 }
 
 }
 
 
+
+/* KNAPPER */
 
 .button{
 
@@ -115,6 +121,7 @@ padding:15px;
 text-align:center;
 position:sticky;
 top:0;
+z-index:10;
 
 }
 
@@ -138,25 +145,97 @@ color:#38bdf8;
 
 
 
-/* INDHOLD */
+
+/* BOKSE MED EGNE BAGGRUNDE */
+
+.card{
+
+padding:30px;
+margin:30px 0;
+border-radius:20px;
+border:1px solid #334155;
+box-shadow:0 0 25px black;
+
+background-size:cover;
+background-position:center;
+
+position:relative;
+overflow:hidden;
+
+}
+
+
+
+.card::before{
+
+content:"";
+position:absolute;
+inset:0;
+background:rgba(0,0,0,0.65);
+
+}
+
+
+.card *{
+
+position:relative;
+z-index:1;
+
+}
+
+
+
+/* FORSKELLIGE BAGGRUNDE */
+
+
+#home{
+
+background-image:url("https://images.unsplash.com/photo-1477959858617-67f85cf4f1df");
+
+}
+
+
+#rules{
+
+background-image:url("https://images.unsplash.com/photo-1453873531674-2151bcd01707");
+
+}
+
+
+#staff{
+
+background-image:url("https://images.unsplash.com/photo-1521737711867-e3b97375f902");
+
+}
+
+
+#gang{
+
+background-image:url("https://images.unsplash.com/photo-1519085360753-af0119f7cbe7");
+
+}
+
+
+#news{
+
+background-image:url("https://images.unsplash.com/photo-1504711434969-e33886168f5c");
+
+}
+
+
+#contact{
+
+background-image:url("https://images.unsplash.com/photo-1516321318423-f06f85e504b3");
+
+}
+
+
 
 section{
 
 max-width:1000px;
 margin:auto;
 padding:30px;
-
-}
-
-
-.card{
-
-background:#111827;
-padding:25px;
-margin:30px 0;
-border-radius:20px;
-border:1px solid #334155;
-box-shadow:0 0 20px black;
 
 }
 
@@ -176,8 +255,7 @@ margin:12px;
 
 
 
-
-/* STAFF */
+/* STAFF DESIGN */
 
 .staff{
 
@@ -190,7 +268,7 @@ flex-wrap:wrap;
 
 .person{
 
-background:#1e293b;
+background:rgba(30,41,59,0.9);
 padding:20px;
 border-radius:15px;
 flex:1;
@@ -209,6 +287,7 @@ text-align:center;
 
 }
 
+
 </style>
 
 </head>
@@ -217,14 +296,15 @@ text-align:center;
 <body>
 
 
-
 <header>
 
 <div class="hero">
 
 
 <div class="emergency">
+
 🚨 🚓 🚒 🚑 🕵️ 🚛 🚌 🔧 🚨
+
 </div>
 
 
@@ -254,22 +334,33 @@ En realistisk RP-server med seriøst roleplay
 
 <br><br>
 
-Politi 🚓 (Police) |
-Brandvæsen 🚒 (Fire Department) |
-Ambulance 🚑 (Paramedic)
-
+Politi 🚓 (Police)
 <br>
 
-Kriminelle 🕵️ (Criminals) |
-Lastbil 🚛 (Truck Driver) |
-Bus 🚌 (Bus Driver) |
+Brandvæsen 🚒 (Fire Department)
+<br>
+
+Ambulance 🚑 (Ambulance)
+<br>
+
+Kriminelle 🕵️ (Criminals)
+<br>
+
+Lastbil 🚛 (Truck Driver)
+<br>
+
+Bus 🚌 (Bus Driver)
+<br>
+
 Autohjælp 🔧 (Roadside Assistance)
 
 </p>
 
 
 <a class="button" href="#rules">
+
 Læs regler (Read Rules)
+
 </a>
 
 
@@ -279,26 +370,25 @@ Læs regler (Read Rules)
 
 
 
-
-
 <nav>
 
 <a href="#home">Forside (Home)</a>
+
 <a href="#rules">Regler (Rules)</a>
+
 <a href="#staff">Staff Team</a>
-<a href="#gang">Bliv ejer af en bande (Become a gang owner)</a>
+
+<a href="#gang">Bande (Gang)</a>
+
 <a href="#news">Nyheder (News)</a>
+
 <a href="#contact">Kontakt (Contact)</a>
 
 </nav>
-
-
-
-
-
 <section>
 
 
+<!-- FORSIDE -->
 
 <div class="card" id="home">
 
@@ -310,7 +400,7 @@ Forside (Home)
 
 Velkommen til Roblox-RP.
 
-Her kan du skabe din egen historie og opleve realistisk roleplay med andre spillere.
+Her kan du skabe din egen historie og opleve realistisk roleplay sammen med andre spillere.
 
 <br><br>
 
@@ -326,7 +416,7 @@ Here you can create your own story and experience realistic roleplay with other 
 
 
 
-
+<!-- REGLER -->
 
 <div class="card" id="rules">
 
@@ -334,21 +424,39 @@ Here you can create your own story and experience realistic roleplay with other 
 Regler (Rules)
 </h2>
 
+
 <ul>
 
-<li>Respekter alle spillere (Respect all players)</li>
+<li>
+Respekter alle spillere (Respect all players)
+</li>
 
-<li>Ingen RDM (No random deathmatch)</li>
+<li>
+Ingen RDM (No random deathmatch)
+</li>
 
-<li>Ingen trolling (No trolling)</li>
+<li>
+Ingen trolling (No trolling)
+</li>
 
-<li>Ingen exploits (No exploits)</li>
+<li>
+Ingen exploits (No exploits)
+</li>
 
-<li>Følg staff (Follow staff)</li>
+<li>
+Følg staff's instruktioner (Follow staff instructions)
+</li>
 
-<li>Hold realistisk RP (Keep realistic RP)</li>
+<li>
+Hold realistisk RP (Keep realistic RP)
+</li>
+
+<li>
+Ingen dårlig opførsel (No bad behaviour)
+</li>
 
 </ul>
+
 
 </div>
 
@@ -358,6 +466,8 @@ Regler (Rules)
 
 
 
+
+<!-- STAFF -->
 
 <div class="card" id="staff">
 
@@ -372,7 +482,7 @@ Staff Team
 <div class="person">
 
 <h3>
-Owner
+👑 Owner
 </h3>
 
 <p>
@@ -386,7 +496,7 @@ Millx100
 <div class="person">
 
 <h3>
-Admin
+🛡️ Admin
 </h3>
 
 <p>
@@ -402,7 +512,7 @@ Andx100
 <div class="person">
 
 <h3>
-Moderator
+🔨 Moderator
 </h3>
 
 <p>
@@ -412,24 +522,30 @@ Andx100
 </div>
 
 
-
-</div>
-
 </div>
 
 
+</div>
 
 
 
 
 
+
+
+
+
+<!-- BANDE -->
 
 <div class="card" id="gang">
 
+
 <h2>
+
 Bliv ejer af en bande
 <br>
 (Become a gang owner)
+
 </h2>
 
 
@@ -447,15 +563,15 @@ Do you want to create your own gang?
 <ul>
 
 <li>
-Vær aktiv (Be active)
+Vær aktiv på serveren (Be active on the server)
 </li>
 
 <li>
-Følg reglerne (Follow rules)
+Følg reglerne (Follow the rules)
 </li>
 
 <li>
-Lav en god historie (Create a good story)
+Lav en god bandehistorie (Create a good gang story)
 </li>
 
 <li>
@@ -474,27 +590,40 @@ Hav seriøse medlemmer (Have serious members)
 
 
 
+
+<!-- NYHEDER -->
+
 <div class="card" id="news">
 
+
 <h2>
+
 Nyheder (News)
+
 </h2>
 
 
+
 <h3>
+
 🏁 Ny racer bane ved containerskibene
+
 <br>
+
 (New race track by the container ships)
+
 </h3>
 
 
 <p>
 
-En ny racer bane er blevet bygget ved containerskibene.
+En ny racer bane er blevet lavet ved containerskibene.
+Her kan spillere mødes til races og events.
 
 <br><br>
 
-A new race track has been built by the container ships.
+A new race track has been created by the container ships.
+Players can meet for races and events.
 
 </p>
 
@@ -505,19 +634,23 @@ A new race track has been built by the container ships.
 
 
 <h3>
+
 🕵️ Krimihuset
+
 <br>
+
 (Crime House)
+
 </h3>
 
 
 <p>
 
-Krimihuset har fået et P-hus.
+Krimihuset har fået et P-hus, så der er bedre parkering og nye muligheder for roleplay.
 
 <br><br>
 
-The Crime House has received a parking garage.
+The Crime House has received a parking garage, creating better parking and new roleplay opportunities.
 
 </p>
 
@@ -531,25 +664,46 @@ The Crime House has received a parking garage.
 
 
 
+
+<!-- KONTAKT -->
+
 <div class="card" id="contact">
 
+
 <h2>
+
 Kontakt (Contact)
+
 </h2>
 
 
 <p>
 
 Discord:
+
 <br>
 
 DIT DISCORD LINK HER
 
+<br><br>
+
+Kontakt staff hvis du har spørgsmål.
+
+<br>
+
+(Contact staff if you have questions.)
+
 </p>
 
 
-</div>
+<a class="button">
 
+Join Discord
+
+</a>
+
+
+</div>
 
 
 
@@ -564,7 +718,6 @@ DIT DISCORD LINK HER
 Roblox-RP © 2026
 
 </footer>
-
 
 
 </body>
