@@ -11,7 +11,6 @@
 
 <style>
 
-
 *{
 box-sizing:border-box;
 scroll-behavior:smooth;
@@ -21,7 +20,7 @@ scroll-behavior:smooth;
 body{
 
 margin:0;
-font-family:Arial, sans-serif;
+font-family:Arial,sans-serif;
 background:#050b18;
 color:white;
 
@@ -43,7 +42,7 @@ rgba(0,0,0,0.45),
 rgba(0,0,0,0.85)
 ),
 
-url("https://images.unsplash.com/photo-1483721310020-03333e577078")
+url("https://images.unsplash.com/photo-1449824913935-59a10b8d2000")
 
 center/cover;
 
@@ -53,19 +52,17 @@ justify-content:center;
 align-items:center;
 text-align:center;
 
-
 }
 
 
 
 .hero{
 
-max-width:1000px;
-
+max-width:1100px;
 animation:fade 2s;
 
-
 }
+
 
 
 
@@ -77,7 +74,6 @@ opacity:0;
 transform:translateY(50px);
 
 }
-
 
 to{
 
@@ -94,22 +90,19 @@ transform:translateY(0);
 .emergency{
 
 font-size:70px;
-
-animation:lights 1s infinite;
+animation:blink 1s infinite;
 
 }
 
 
 
-@keyframes lights{
-
+@keyframes blink{
 
 50%{
 
 opacity:0.3;
 
 }
-
 
 }
 
@@ -118,17 +111,12 @@ opacity:0.3;
 
 .hero h1{
 
-
 font-size:90px;
-
 color:#38bdf8;
 
 text-shadow:
-
 0 0 10px #38bdf8,
-
 0 0 30px blue;
-
 
 }
 
@@ -137,11 +125,8 @@ text-shadow:
 
 .hero h2{
 
-
 font-size:35px;
-
 color:#ef4444;
-
 
 }
 
@@ -150,48 +135,34 @@ color:#ef4444;
 
 .hero p{
 
-
 font-size:22px;
-
 line-height:1.6;
-
 
 }
 
 
 
 
-
-/* FORSIDE ROLLER */
+/* ROLLE BOKSE */
 
 
 .action-box{
 
-
 display:flex;
-
 justify-content:center;
-
 gap:20px;
-
 flex-wrap:wrap;
-
 margin-top:30px;
 
-
 }
-
 
 
 
 .action-box div{
 
-
-background:rgba(0,0,0,0.65);
-
+background:rgba(0,0,0,0.7);
 padding:20px;
-
-width:200px;
+width:190px;
 
 border-radius:20px;
 
@@ -199,16 +170,13 @@ border:1px solid #38bdf8;
 
 box-shadow:0 0 20px black;
 
-
 }
 
 
 
 .action-box h3{
 
-
 color:#38bdf8;
-
 
 }
 
@@ -220,7 +188,6 @@ color:#38bdf8;
 
 
 .button{
-
 
 background:#2563eb;
 
@@ -238,16 +205,12 @@ margin-top:30px;
 
 font-weight:bold;
 
-
 }
-
 
 
 .button:hover{
 
-
 background:#dc2626;
-
 
 }
 
@@ -258,7 +221,6 @@ background:#dc2626;
 
 
 nav{
-
 
 background:#020617;
 
@@ -272,13 +234,11 @@ top:0;
 
 z-index:10;
 
-
 }
 
 
 
 nav a{
-
 
 color:white;
 
@@ -288,26 +248,18 @@ text-decoration:none;
 
 font-weight:bold;
 
-
 }
 
 
 
 nav a:hover{
 
-
 color:#38bdf8;
 
-
 }
-
-
-
-/* BOKSE */
-
 section{
 
-max-width:1000px;
+max-width:1100px;
 margin:auto;
 padding:30px;
 
@@ -317,15 +269,14 @@ padding:30px;
 
 .card{
 
-padding:30px;
+padding:35px;
+margin:35px 0;
 
-margin:30px 0;
-
-border-radius:20px;
+border-radius:25px;
 
 border:1px solid #334155;
 
-box-shadow:0 0 25px black;
+box-shadow:0 0 30px black;
 
 background-size:cover;
 
@@ -339,7 +290,6 @@ overflow:hidden;
 
 
 
-
 .card::before{
 
 content:"";
@@ -349,7 +299,6 @@ position:absolute;
 inset:0;
 
 background:rgba(0,0,0,0.65);
-
 
 }
 
@@ -366,7 +315,7 @@ z-index:1;
 
 
 
-/* EGNE BAGGRUNDE */
+/* BILLEDER TIL HVER BOKS */
 
 
 #home{
@@ -379,7 +328,7 @@ background-image:url("https://images.unsplash.com/photo-1477959858617-67f85cf4f1
 
 #rules{
 
-background-image:url("https://images.unsplash.com/photo-1505664194779-8beaceb93744");
+background-image:url("https://images.unsplash.com/photo-1453873531674-2151bcd01707");
 
 }
 
@@ -395,7 +344,7 @@ background-image:url("https://images.unsplash.com/photo-1521737711867-e3b97375f9
 
 #gang{
 
-background-image:url("https://images.unsplash.com/photo-1560250097-0b93528c311a");
+background-image:url("https://images.unsplash.com/photo-1519085360753-af0119f7cbe7");
 
 }
 
@@ -410,11 +359,18 @@ color:#38bdf8;
 
 
 
-li{
 
-margin:12px;
+section{
+
+
+max-width:1100px;
+
+margin:auto;
+
+padding:30px;
 
 }
+
 
 
 
@@ -437,22 +393,19 @@ flex-wrap:wrap;
 
 .person{
 
-
 background:rgba(15,23,42,0.9);
 
-padding:20px;
+padding:25px;
 
 border-radius:15px;
 
 flex:1;
 
-min-width:200px;
+min-width:220px;
 
 text-align:center;
 
-
 }
-
 
 
 
@@ -466,10 +419,7 @@ text-align:center;
 
 
 
-
-
 <section>
-
 
 
 
@@ -483,22 +433,99 @@ Forside (Home)
 </h2>
 
 
+
+<h3>
+
+Velkommen til Roblox-RP
+
+<br>
+
+(Welcome to Roblox-RP)
+
+</h3>
+
+
+
 <p>
 
-Velkommen til Roblox-RP.
+Velkommen til en seriøs RP-server hvor du kan skabe din egen historie.
 
-Her kan du skabe din egen historie og opleve et realistisk roleplay community.
+Du kan opleve spændende situationer, teamwork og realistisk roleplay.
 
 <br><br>
 
-Welcome to Roblox-RP.
+Welcome to a serious RP server where you can create your own story.
 
-Here you can create your own story and experience a realistic roleplay community.
+Experience exciting situations, teamwork and realistic roleplay.
 
 </p>
 
 
+
+<div class="action-box">
+
+
+<div>
+
+<h3>
+🚓 Politi
+</h3>
+
+<p>
+Police
+</p>
+
 </div>
+
+
+
+<div>
+
+<h3>
+🚒 Brandvæsen
+</h3>
+
+<p>
+Fire Department
+</p>
+
+</div>
+
+
+
+<div>
+
+<h3>
+🚑 Ambulance
+</h3>
+
+<p>
+Paramedic
+</p>
+
+</div>
+
+
+
+<div>
+
+<h3>
+🕵️ Kriminel
+</h3>
+
+<p>
+Criminal
+</p>
+
+</div>
+
+
+
+</div>
+
+
+</div>
+
 
 
 
@@ -517,8 +544,8 @@ Regler (Rules)
 </h2>
 
 
-<ul>
 
+<ul>
 
 <li>
 Respekter alle spillere (Respect all players)
@@ -541,7 +568,7 @@ Ingen exploits (No exploits)
 
 
 <li>
-Følg staff (Follow staff instructions)
+Følg staff (Follow staff)
 </li>
 
 
@@ -550,15 +577,11 @@ Hold realistisk RP (Keep realistic RP)
 </li>
 
 
-<li>
-Ingen dårlig opførsel (No bad behaviour)
-</li>
-
-
 </ul>
 
 
 </div>
+
 
 
 
@@ -585,15 +608,11 @@ Staff Team
 <div class="person">
 
 <h3>
-
 👑 Owner
-
 </h3>
 
 <p>
-
 Millx100
-
 </p>
 
 </div>
@@ -601,14 +620,12 @@ Millx100
 
 
 
+
 <div class="person">
 
 <h3>
-
 🛡️ Admin
-
 </h3>
-
 
 <p>
 
@@ -620,7 +637,6 @@ Andx100
 
 </p>
 
-
 </div>
 
 
@@ -630,18 +646,14 @@ Andx100
 <div class="person">
 
 <h3>
-
 🔨 Moderator
-
 </h3>
-
 
 <p>
 
 Andx100
 
 </p>
-
 
 </div>
 
@@ -677,7 +689,7 @@ Bliv ejer af en bande
 
 <p>
 
-Vil du starte din egen bande på Roblox-RP?
+Vil du skabe din egen bande på Roblox-RP?
 
 <br><br>
 
@@ -687,26 +699,35 @@ Do you want to create your own gang on Roblox-RP?
 
 
 
+
 <ul>
 
 
 <li>
+
 Vær aktiv (Be active)
+
 </li>
 
 
 <li>
+
 Følg reglerne (Follow the rules)
+
 </li>
 
 
 <li>
+
 Lav en god historie (Create a good story)
+
 </li>
 
 
 <li>
+
 Hav seriøse medlemmer (Have serious members)
+
 </li>
 
 
@@ -726,7 +747,6 @@ Nyheder (News)
 
 
 
-
 <h3>
 
 🏁 Ny racer bane ved containerskibene
@@ -741,18 +761,17 @@ Nyheder (News)
 
 <p>
 
-En ny racer bane er blevet lavet ved containerskibene.
+En ny racer bane er blevet bygget ved containerskibene.
 
-Her kan spillere mødes til races, events og spændende roleplay.
+Her kan spillere mødes til races, events og sjovt roleplay.
 
 <br><br>
 
-A new race track has been created by the container ships.
+A new race track has been built by the container ships.
 
-Players can meet for races, events and exciting roleplay.
+Players can meet for races, events and fun roleplay.
 
 </p>
-
 
 
 
@@ -786,9 +805,7 @@ The Crime House has received a parking garage, creating better parking and new o
 </p>
 
 
-
 </div>
-
 
 
 
@@ -823,7 +840,9 @@ Har du spørgsmål?
 
 Kontakt vores staff.
 
+
 <br><br>
+
 
 Have questions?
 
@@ -840,8 +859,8 @@ Join Discord
 </a>
 
 
-
 </div>
+
 
 
 
@@ -853,16 +872,13 @@ Join Discord
 
 
 
-
 <footer>
-
 
 Roblox-RP © 2026
 
 <br>
 
 Emergency Roleplay Community
-
 
 </footer>
 
@@ -871,6 +887,5 @@ Emergency Roleplay Community
 
 
 </body>
-
 
 </html>
