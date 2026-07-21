@@ -20,7 +20,7 @@ scroll-behavior:smooth;
 body{
 
 margin:0;
-font-family:Arial, sans-serif;
+font-family:Arial,sans-serif;
 background:#050b18;
 color:white;
 
@@ -28,7 +28,7 @@ color:white;
 
 
 
-/* TOP FORSIDE */
+/* ØVERSTE FORSIDE */
 
 header{
 
@@ -57,7 +57,7 @@ text-align:center;
 
 .hero{
 
-max-width:1100px;
+max-width:1200px;
 animation:show 2s;
 
 }
@@ -81,7 +81,6 @@ transform:translateY(0);
 }
 
 }
-
 
 
 
@@ -126,6 +125,7 @@ text-shadow:
 0 0 15px #38bdf8,
 0 0 40px blue;
 
+
 animation:title 3s infinite alternate;
 
 }
@@ -164,7 +164,7 @@ color:#ef4444;
 
 .hero p{
 
-font-size:22px;
+font-size:21px;
 
 line-height:1.7;
 
@@ -175,14 +175,13 @@ line-height:1.7;
 
 /* ROLLE BOKSE */
 
-
 .action-box{
 
 display:flex;
 
 justify-content:center;
 
-gap:15px;
+gap:18px;
 
 flex-wrap:wrap;
 
@@ -192,18 +191,17 @@ margin-top:25px;
 
 
 
-
-.action-box div{
+.role-card{
 
 background:rgba(0,0,0,0.75);
 
-padding:15px;
-
 width:170px;
+
+padding:20px;
 
 border-radius:20px;
 
-border:1px solid #38bdf8;
+border:2px solid #38bdf8;
 
 box-shadow:0 0 20px black;
 
@@ -213,9 +211,9 @@ transition:0.3s;
 
 
 
-.action-box div:hover{
+.role-card:hover{
 
-transform:translateY(-10px);
+transform:translateY(-15px) scale(1.05);
 
 background:#1e3a8a;
 
@@ -223,17 +221,27 @@ background:#1e3a8a;
 
 
 
-.action-box h3{
+.icon{
+
+font-size:45px;
+
+}
+
+
+
+.role-card h3{
 
 color:#38bdf8;
+
+font-size:22px;
 
 }
 
 
 
 
-/* KNAPPER */
 
+/* KNAPPER */
 
 .button{
 
@@ -271,7 +279,6 @@ transform:scale(1.1);
 
 
 /* MENU */
-
 
 nav{
 
@@ -311,11 +318,10 @@ color:#38bdf8;
 
 }
 
+<style>
 
 
-
-/* BOKSE */
-
+/* SEKTIONER */
 
 section{
 
@@ -354,6 +360,7 @@ border:1px solid #334155;
 
 
 
+
 .card::before{
 
 content:"";
@@ -379,22 +386,12 @@ z-index:1;
 
 
 
-h2{
-
-color:#38bdf8;
-
-}
-
-
-
-/* BAGGRUNDE */
-
-
 #home{
 
 background-image:url("https://images.unsplash.com/photo-1477959858617-67f85cf4f1df");
 
 }
+
 
 
 #rules{
@@ -404,11 +401,13 @@ background-image:url("https://images.unsplash.com/photo-1453873531674-2151bcd017
 }
 
 
+
 #staff{
 
 background-image:url("https://images.unsplash.com/photo-1521737711867-e3b97375f902");
 
 }
+
 
 
 #gang{
@@ -418,11 +417,13 @@ background-image:url("https://images.unsplash.com/photo-1519085360753-af0119f7cb
 }
 
 
+
 #news{
 
 background-image:url("https://images.unsplash.com/photo-1504711434969-e33886168f5c");
 
 }
+
 
 
 #contact{
@@ -432,12 +433,24 @@ background-image:url("https://images.unsplash.com/photo-1516321318423-f06f85e504
 }
 
 
+
+h2{
+
+color:#38bdf8;
+
+}
+
+
+
 </style>
+
 
 </head>
 
 
 <body>
+
+
 
 
 
@@ -481,72 +494,113 @@ Velkommen til Roblox-RP
 
 <br><br>
 
-En realistisk roleplay verden med action, teamwork og spændende historier.
+En realistisk RP verden fyldt med action, teamwork og spændende historier.
 
 <br>
 
-(A realistic roleplay world with action, teamwork and exciting stories.)
-
-<br><br>
-
-🚓 Politi (Police)
-
-<br>
-
-🚒 Brandvæsen (Fire Department)
-
-<br>
-
-🚑 Ambulance (Paramedic)
-
-<br>
-
-🕵️ Kriminel (Criminal)
-
-<br>
-
-🚛 Lastbil (Truck Driver)
-
-<br>
-
-🚌 Bus (Bus Driver)
-
-<br>
-
-🔧 Autohjælp (Roadside Assistance)
+(A realistic RP world full of action, teamwork and exciting stories.)
 
 </p>
+
+
 
 
 
 <div class="action-box">
 
 
-<div>
-<h3>🚓 Politi</h3>
+<div class="role-card">
+
+<div class="icon">🚓</div>
+
+<h3>Politi</h3>
+
 <p>Police</p>
+
 </div>
 
 
-<div>
-<h3>🚒 Brandvæsen</h3>
+
+<div class="role-card">
+
+<div class="icon">🚒</div>
+
+<h3>Brandvæsen</h3>
+
 <p>Fire Department</p>
+
 </div>
 
 
-<div>
-<h3>🚑 Ambulance</h3>
+
+
+<div class="role-card">
+
+<div class="icon">🚑</div>
+
+<h3>Ambulance</h3>
+
 <p>Paramedic</p>
+
 </div>
 
 
-<div>
-<h3>🕵️ Kriminel</h3>
+
+
+<div class="role-card">
+
+<div class="icon">🕵️</div>
+
+<h3>Kriminel</h3>
+
 <p>Criminal</p>
+
 </div>
 
 
+
+
+<div class="role-card">
+
+<div class="icon">🚛</div>
+
+<h3>Lastbil</h3>
+
+<p>Truck Driver</p>
+
 </div>
+
+
+
+
+<div class="role-card">
+
+<div class="icon">🚌</div>
+
+<h3>Bus</h3>
+
+<p>Bus Driver</p>
+
+</div>
+
+
+
+
+<div class="role-card">
+
+<div class="icon">🔧</div>
+
+<h3>Autohjælp</h3>
+
+<p>Roadside Assistance</p>
+
+</div>
+
+
+
+</div>
+
+
 
 
 
@@ -561,6 +615,7 @@ En realistisk roleplay verden med action, teamwork og spændende historier.
 </a>
 
 
+
 <a class="button" href="#contact">
 
 💬 Discord
@@ -572,6 +627,8 @@ En realistisk roleplay verden med action, teamwork og spændende historier.
 </div>
 
 </header>
+
+
 
 
 
@@ -603,6 +660,8 @@ En realistisk roleplay verden med action, teamwork og spændende historier.
 
 
 
+
+
 <div class="card" id="home">
 
 
@@ -617,19 +676,18 @@ Forside (Home)
 
 Velkommen til Roblox-RP.
 
-Her kan du skabe din egen historie og være en del af et stort roleplay fællesskab.
+Her kan du skabe din egen historie og blive en del af vores community.
 
 <br><br>
 
 Welcome to Roblox-RP.
 
-Create your own story and become part of a great roleplay community.
+Create your own story and become part of our community.
 
 </p>
 
 
 </div>
-
 
 
 
@@ -672,7 +730,6 @@ Regler (Rules)
 
 
 
-
 <div class="card" id="staff">
 
 
@@ -683,11 +740,6 @@ Staff Team
 </h2>
 
 
-<div class="action-box">
-
-
-<div>
-
 <h3>👑 Owner</h3>
 
 <p>
@@ -696,11 +748,7 @@ Millx100
 
 </p>
 
-</div>
 
-
-
-<div>
 
 <h3>🛡️ Admin</h3>
 
@@ -714,12 +762,8 @@ Andx100
 
 </p>
 
-</div>
 
 
-
-
-<div>
 
 <h3>🔨 Moderator</h3>
 
@@ -729,10 +773,6 @@ Andx100
 
 </p>
 
-</div>
-
-
-</div>
 
 
 </div>
@@ -760,7 +800,7 @@ Bliv ejer af en bande
 
 <p>
 
-Vil du starte din egen bande?
+Vil du skabe din egen bande?
 
 <br>
 
@@ -769,14 +809,13 @@ Do you want to create your own gang?
 </p>
 
 
-
 <ul>
 
 <li>Vær aktiv (Be active)</li>
 
 <li>Følg reglerne (Follow the rules)</li>
 
-<li>Lav en god historie (Create a good story)</li>
+<li>Lav en historie (Create a story)</li>
 
 <li>Hav seriøse medlemmer (Have serious members)</li>
 
@@ -802,7 +841,6 @@ Nyheder (News)
 </h2>
 
 
-
 <h3>
 
 🏁 Ny racer bane ved containerskibene
@@ -816,17 +854,18 @@ Nyheder (News)
 
 <p>
 
-En ny racer bane ved containerskibene er klar.
+En ny racer bane er lavet ved containerskibene.
 
 <br>
 
-A new race track by the container ships is ready.
+A new race track has been created by the container ships.
 
 </p>
 
 
 
 <hr>
+
 
 
 
@@ -862,7 +901,6 @@ The Crime House has received a parking garage.
 
 
 
-
 <div class="card" id="contact">
 
 
@@ -871,7 +909,6 @@ The Crime House has received a parking garage.
 Kontakt (Contact)
 
 </h2>
-
 
 
 <p>
@@ -895,13 +932,11 @@ Contact staff if you have questions.
 </p>
 
 
-
 <a class="button">
 
 Join Discord
 
 </a>
-
 
 
 </div>
@@ -924,8 +959,6 @@ Roblox-RP © 2026
 Emergency Roleplay Community
 
 </footer>
-
-
 
 
 
