@@ -23,15 +23,18 @@ color:white;
 }
 
 
-/* HERO */
+/* FORSIDE */
 
 header{
 
 height:100vh;
 
 background:
-linear-gradient(rgba(0,0,0,.75),rgba(0,0,0,.85)),
-url("https://images.unsplash.com/photo-1449824913935-59a10b8d2000")
+linear-gradient(
+rgba(0,0,0,0.65),
+rgba(0,0,0,0.85)
+),
+url("https://images.unsplash.com/photo-1504215680853-026ed2a45def")
 center/cover;
 
 display:flex;
@@ -46,7 +49,10 @@ text-align:center;
 
 font-size:80px;
 color:#38bdf8;
-text-shadow:0 0 25px blue;
+
+text-shadow:
+0 0 10px blue,
+0 0 30px blue;
 
 }
 
@@ -65,37 +71,33 @@ font-size:22px;
 }
 
 
-
 .emergency{
 
-font-size:55px;
+font-size:60px;
 animation:blink 1s infinite;
-text-shadow:0 0 20px red;
 
 }
-
 
 
 @keyframes blink{
 
 50%{
-opacity:.3;
+opacity:0.3;
 }
 
 }
-
 
 
 
 .button{
 
 display:inline-block;
-padding:15px 30px;
-margin-top:20px;
 background:#2563eb;
 color:white;
-text-decoration:none;
+padding:15px 30px;
 border-radius:12px;
+margin-top:20px;
+text-decoration:none;
 font-weight:bold;
 
 }
@@ -109,9 +111,8 @@ background:#dc2626;
 
 
 
+/* MENU */
 
-
-/* NAV */
 
 nav{
 
@@ -120,9 +121,9 @@ padding:15px;
 text-align:center;
 position:sticky;
 top:0;
+z-index:5;
 
 }
-
 
 
 nav a{
@@ -135,7 +136,6 @@ font-weight:bold;
 }
 
 
-
 nav a:hover{
 
 color:#38bdf8;
@@ -146,7 +146,8 @@ color:#38bdf8;
 
 
 
-/* CONTENT */
+/* SECTIONS */
+
 
 section{
 
@@ -155,7 +156,6 @@ margin:auto;
 padding:30px;
 
 }
-
 
 
 .card{
@@ -170,13 +170,11 @@ box-shadow:0 0 20px black;
 }
 
 
-
 h2{
 
 color:#38bdf8;
 
 }
-
 
 
 li{
@@ -190,6 +188,7 @@ margin:12px;
 
 /* STAFF */
 
+
 .staff{
 
 display:flex;
@@ -197,7 +196,6 @@ gap:20px;
 flex-wrap:wrap;
 
 }
-
 
 
 .person{
@@ -214,7 +212,9 @@ text-align:center;
 
 
 
-/* SERVER */
+
+/* INFO */
+
 
 .server{
 
@@ -223,7 +223,6 @@ gap:20px;
 flex-wrap:wrap;
 
 }
-
 
 
 .info{
@@ -261,7 +260,6 @@ background:#5865F2;
 </head>
 
 
-
 <body>
 
 
@@ -272,9 +270,7 @@ background:#5865F2;
 
 
 <div class="emergency">
-
 🚨 🚓 🚒 🚑 🕵️ 🚛 🚌 🔧 🚨
-
 </div>
 
 
@@ -284,7 +280,7 @@ Roblox-RP
 
 
 <h2>
-Emergency & Criminal Roleplay Community
+Emergency & Criminal Roleplay
 </h2>
 
 
@@ -309,16 +305,13 @@ Velkommen til vores realistiske Roblox RP-server
 
 
 <a class="button" href="#rules">
-
 Læs regler (Read Rules)
-
 </a>
 
 
 </div>
 
 </header>
-
 
 
 
@@ -344,7 +337,6 @@ Læs regler (Read Rules)
 
 <div class="card" id="home">
 
-
 <h2>
 Forside (Home)
 </h2>
@@ -362,7 +354,7 @@ Roblox-RP er en seriøs roleplay server hvor du kan være:
 🚒 Brandmand (Firefighter)
 
 <br>
-🚑 Ambulanceredder (Paramedic)
+🚑 Ambulance (Paramedic)
 
 <br>
 🕵️ Kriminel (Criminal)
@@ -376,19 +368,19 @@ Roblox-RP er en seriøs roleplay server hvor du kan være:
 <br>
 🔧 Autohjælpsmand (Roadside Assistance)
 
+
 <br><br>
 
-Vi skaber realistisk RP og et stærkt community.
+Vi skaber realistisk RP for alle spillere.
 
 <br>
 
-(We create realistic RP and a strong community.)
+(We create realistic RP for everyone.)
 
 </p>
 
 
 <div class="server">
-
 
 <div class="info">
 <h3>Spillere (Players)</h3>
@@ -407,11 +399,11 @@ Vi skaber realistisk RP og et stærkt community.
 <p>2026</p>
 </div>
 
-
 </div>
 
 
 </div>
+
 
 
 
@@ -420,7 +412,6 @@ Vi skaber realistisk RP og et stærkt community.
 
 
 <div class="card" id="rules">
-
 
 <h2>
 Regler (Rules)
@@ -442,7 +433,7 @@ Ingen trolling (No trolling)
 </li>
 
 <li>
-Ingen exploits (No exploiting)
+Ingen exploits (No exploits)
 </li>
 
 <li>
@@ -452,11 +443,6 @@ Følg staff (Follow staff)
 <li>
 Hold realistisk RP (Keep realistic RP)
 </li>
-
-<li>
-Ingen dårlig opførsel (No bad behaviour)
-</li>
-
 
 </ul>
 
@@ -471,7 +457,6 @@ Ingen dårlig opførsel (No bad behaviour)
 
 
 <div class="card" id="staff">
-
 
 <h2>
 Staff Team
@@ -511,7 +496,6 @@ Andx100
 
 
 
-
 <div class="person">
 
 <h3>
@@ -525,12 +509,9 @@ Andx100
 </div>
 
 
-
 </div>
 
-
 </div>
-
 
 
 
@@ -540,7 +521,6 @@ Andx100
 
 
 <div class="card" id="gang">
-
 
 <h2>
 
@@ -553,11 +533,11 @@ Bliv ejer af en bande
 
 <p>
 
-Vil du skabe din egen kriminelle bande?
+Vil du skabe din egen bande?
 
 <br>
 
-(Do you want to create your own criminal gang?)
+(Do you want to create your own gang?)
 
 </p>
 
@@ -580,7 +560,6 @@ Lav en god historie (Create a good story)
 Hav seriøse medlemmer (Have serious members)
 </li>
 
-
 </ul>
 
 
@@ -595,11 +574,8 @@ Hav seriøse medlemmer (Have serious members)
 
 <div class="card" id="news">
 
-
 <h2>
-
 Nyheder (News)
-
 </h2>
 
 
@@ -625,18 +601,14 @@ Nyheder (News)
 
 <div class="card" id="contact">
 
-
 <h2>
-
 Kontakt (Contact)
-
 </h2>
 
 
 <p>
 
 Discord:
-
 <br>
 
 DIT DISCORD LINK HER
@@ -645,9 +617,7 @@ DIT DISCORD LINK HER
 
 
 <a class="button discord">
-
 Join Discord
-
 </a>
 
 
@@ -667,7 +637,6 @@ Join Discord
 Roblox-RP © 2026
 
 </footer>
-
 
 
 </body>
